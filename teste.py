@@ -3,10 +3,11 @@
 
 import o_transfer_file_to_matrix;
 
+teste = [1, 2, 3, 4];
+print teste[0:3];
 
-# file_name = "/home/hao/PycharmProjects/Machine_Learning_in_Action/outils/outils/021_txt_donnees";
-# fichier = open(file_name);
-# group, labels = o_transfer_file_to_matrix(file_name, 3);
+file_name = "./outils/021_txt_donnees";
+group, labels = o_transfer_file_to_matrix.file_2_matrix(file_name, 3);
 
-# print "group", group;
-# print "labels", labels;
+print "group", group;
+print "labels", labels;
