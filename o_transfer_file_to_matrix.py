@@ -30,9 +30,10 @@ def file_2_matrix(file_name, nb_colonne):
         champs_de_lists = ligne.split("\t");
         current_colonne_index = 0;
         for current_colonne in champs_de_lists:
-            matchObj = re.search(r'([0-9]+\.)?([0-9]+)', current_colonne);
+            matchObj = re.match(r'([0-9]+\.)?([0-9]+)', current_colonne);
             if matchObj:
                 champs_de_lists[current_colonne_index] = float(matchObj.group());
+                current_colonne_index = current_colonne_index+1;
             else:
                 contain_string_value=0;
                 break;
