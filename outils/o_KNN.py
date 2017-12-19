@@ -10,6 +10,8 @@ def createDataSet() :
     labels = ['A', 'A', 'B', 'B'];
     return groupe, labels;
 
+
+
 def classify0(inX, dataset, labels, k):
     #nombre de enregistrement
     #计算行数   .
@@ -44,3 +46,11 @@ def classify0(inX, dataset, labels, k):
                                 key=operator.itemgetter(1),
                                 reverse=True);
     return sorted_class_count[0][0];
+
+
+
+def dating_calss_test_knn():
+    """
+    用约会网站上的数据对knn进行验证
+    :return: 将答案显示在终端上
+    """
