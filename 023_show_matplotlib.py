@@ -3,6 +3,8 @@
 # 一个简单介绍matplotlib的例子 .
 
 from numpy import *;
+from outils.o_normalize import auto_norm;
+
 """
  matplotlib.pyplot需安装 python-tk
  sudo apt-get install python-tk
@@ -16,9 +18,7 @@ import time;
 file_name = "./donnees/d_datingTestSet2.txt";
 groupe, libelles = transfer_file_to_matrix.file_2_matrix(file_name, 3);
 
-print  groupe.shape;
-print max(groupe[:, 0]), max(groupe[:, 1]), max(groupe[:, 2])
-
+# groupe, range, max_value, min_value = auto_norm(groupe);
 
 # 创建一幅图
 tableau = plt.figure();

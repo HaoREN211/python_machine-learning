@@ -4,6 +4,8 @@
 
 from numpy import *;
 import  operator;
+from  o_transfer_file_to_matrix import  file_2_matrix;
+from o_normalize import  auto_norm;
 
 def createDataSet() :
     groupe = array([[1.0, 1.1],[1.0, 1.0],[0, 0],[0, 0.1]]);
@@ -49,8 +51,49 @@ def classify0(inX, dataset, labels, k):
 
 
 
-def dating_calss_test_knn():
+def dating_calss_test_knn(k):
     """
     用约会网站上的数据对knn进行验证
+    :param k: k 近邻
     :return: 将答案显示在终端上
     """
+    ratio_data_test = 0.1; # 测试集数据比例
+    groupe, libelles = file_2_matrix("./donnees/d_datingTestSet2.txt", 3);
+    dataset, decalage, max_value, min_value = auto_norm(groupe); # 将数据归一化
+    nombre_ligne = dataset.shape[0];
+    nombre_data_test = int(nombre_ligne*ratio_data_test); # 测试集数据量
+    nombre_erreur = 0.0; # 分类器出错总数
+    print  nombre_data_test;
+
+    """
+    将数据集前nombre_data_test的数据当成测试数据 并一一循环
+    比较分类器对测试集给出的分类和测试集原应归属的分类
+    """
+    for i in range(nombre_data_test):
+        resultat = classify0(dataset[i, :],
+                             dataset[nombre_data_test:nombre_ligne, :],
+                             libelles[nombre_data_test:nombre_ligne],
+                             k);
+        print "the classifier came back with: %d, the real answer is: %d" % (resultat, libelles[i]);
+        if (resultat != libelles[i]):
+            nombre_erreur +=1.0;
+
+    print "the total error rate is : %f" % (float(nombre_erreur)/float(nombre_data_test));
+    return int((float(1)-(float(nombre_erreur)/float(nombre_data_test)))*int(100));
+
+
+def classify_person():
+    """
+    给定一个人的信息 来判断他是否是海伦喜欢的类型
+    :return:
+    """
+
+    groupe, libelles = file_2_matrix("./donnees/d_datingTestSet2.txt", 3);
+    dataset, decalage, max_value, min_value = auto_norm(groupe);
+    distance_avion = float(raw_input("每年坐飞机飞行了多少距离？"));
+    resultat_libelle = ["不适合你","可能适合你","极大可能适合你"];
+    pourcentage_game = float(raw_input("玩游戏占了生活时间多少比重?"));
+    litre_glace = float(raw_input("每年吃了升冰淇淋?"));
+    input_list = array([distance_avion, pourcentage_game, litre_glace]); # 归一化输入数据
+    resultat = classify0((input_list-min_value)/decalage, dataset, libelles, 3);
+    print "这哥们", resultat_libelle[resultat-1];
