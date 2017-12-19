@@ -1,13 +1,18 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python
 
-import o_transfer_file_to_matrix;
+from numpy import *;
+from re import *;
 
-teste = [1, 2, 3, 4];
-print teste[0:3];
+import re
 
-file_name = "./outils/021_txt_donnees";
-group, labels = o_transfer_file_to_matrix.file_2_matrix(file_name, 3);
+line = "40920.1234123   "
 
-print "group", group;
-print "labels", labels;
+matchObj = re.search(r'([0-9]+\.)?([0-9]+)', line)
+
+if matchObj:
+    print "matchObj.group() : ", matchObj.group()
+    print "matchObj.group(1) : ", matchObj.group(1)
+    print "matchObj.group(2) : ", matchObj.group(2)
+else:
+    print "No match!!"
