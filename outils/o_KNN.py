@@ -6,6 +6,8 @@ from numpy import *;
 import  operator;
 from  o_transfer_file_to_matrix import  file_2_matrix;
 from o_normalize import  auto_norm;
+from os import listdir;
+from outils.o_img_2_vector import img_2_vector;
 
 def createDataSet() :
     groupe = array([[1.0, 1.1],[1.0, 1.0],[0, 0],[0, 0.1]]);
@@ -97,3 +99,43 @@ def classify_person():
     input_list = array([distance_avion, pourcentage_game, litre_glace]); # 归一化输入数据
     resultat = classify0((input_list-min_value)/decalage, dataset, libelles, 3);
     print "这哥们", resultat_libelle[resultat-1];
+
+
+def handwriting_class_test():
+    """
+    用图像数据测试KNN算法
+    :return:
+    """
+    hw_libelles = [];
+
+    """
+    训练分类器
+    """
+    liste_fichier_apprenstisage = listdir("./donnees/trainingDigits");
+    nombre_fichier_apprenstisage = len(liste_fichier_apprenstisage);
+    matrice_apprentissage = zeros((nombre_fichier_apprenstisage, 1024));
+    for i in range(nombre_fichier_apprenstisage):
+        fichier_current = liste_fichier_apprenstisage[i];
+        chiffre = int(fichier_current.split("_")[0]);
+        hw_libelles.append(chiffre);
+        matrice_apprentissage[i,:] = img_2_vector("./donnees/trainingDigits/%s" % fichier_current);
+
+    """
+    测试分类器
+    """
+    liste_fichier_teste = listdir("./donnees/trainingDigits");
+    nombre_fichier_teste = len(liste_fichier_teste);
+    nombre_erreur = float(0.0);
+
+    for i in range(nombre_fichier_teste):
+        fichier_current = liste_fichier_teste[i];
+        chiffre = int(fichier_current.split("_")[0]);
+        vecteur_teste = img_2_vector("./donnees/trainingDigits/%s" % fichier_current);
+        resultat = classify0(vecteur_teste,
+                             matrice_apprentissage,
+                             hw_libelles,
+                             3);
+        if(chiffre != resultat):
+            nombre_erreur += float(1.0);
+    print "le nombre d'erreur est %f" % nombre_erreur;
+    print "le taux d'erreur est %f" % (nombre_erreur/float(nombre_fichier_teste));

@@ -16,3 +16,4 @@ def img_2_vector(file_name):
         ligne_fichier = fichier.readline();
         for j in range(32):
             resultat[0, i*32+j] = (ligne_fichier[j]);
+    return resultat;
