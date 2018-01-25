@@ -2,6 +2,21 @@
 #!/usr/bin/python
 
 from math import log;
+from operator import itemgetter;
+"""
+itemgetter
+operator模块提供的itemgetter函数用于获取对象的哪些维的数据，参数为一些序号（即需要获取的数据在对象中的序号），下面看例子。
+a = [1,2,3] 
+>>> b=operator.itemgetter(1)      //定义函数b，获取对象的第1个域的值
+>>> b(a) 
+2 
+
+>>> b=operator.itemgetter(1,0)   //定义函数b，获取对象的第1个域和第0个的值
+>>> b(a) 
+(2, 1) 
+
+要注意，operator.itemgetter函数获取的不是值，而是定义了一个函数，通过该函数作用到对象上才能获取值。
+"""
 
 def diff_append_extend():
     a=[1,2,3];
@@ -155,3 +170,63 @@ def choisir_meilleur_attribut_a_decouper(dataset):
             best_info_gain = info_gain;
             best_attribut = i;
     return best_attribut;
+
+
+def majority_cnt(classlist):
+    """
+    该函数使用分类名称的列表，然后创建键值classlist中唯一值的数据字典，
+    字典对象存储了classlist中每个分类标签出现的频率，
+    最后利用operator操作键值排序字典，
+    并且返回出现次数最多的分类名称
+    :param classlist:
+    :return:
+    """
+    class_count = {};
+    for vot in classlist:
+        if vot not in class_count.keys():
+            class_count[vot]=0;
+        class_count[vot] +=1;
+    sorted_class_count = sorted(class_count.iteritems(),
+                                key=itemgetter(1),
+                                reverse=True);
+    print sorted_class_count;
+    return sorted_class_count[0][0];
+
+
+
+def create_tree(dataset, label):
+    """
+    创建树的函数代码
+    :param dataset:
+    :param label:标签列表包含了数据集中所有特征的标签，算法本身并不需要这个变量，但是为了给出数据明确的含义，我们将它作为一个输入参数提供。
+    :return:
+    """
+    class_list = [example[-1] for example in dataset];
+
+
+    # 类别完全相同则停止继续划分
+    if class_list.count(class_list[0]) == len(class_list):
+        return class_list[0];
+
+    # 遍历完所有特征时返回出现次数最多的类别
+    if len(dataset[0])==1:
+        return majority_cnt([0]);
+
+    # 找到当前最优特征指标index
+    best_feat = choisir_meilleur_attribut_a_decouper(dataset);
+
+    # 找到当前最优特征指标index对应的label
+    best_feat_labal = label[best_feat];
+
+    my_tree = {best_feat_labal:{}};
+    del (label[best_feat]);
+
+    # 得到列表包含的所有属性值
+    feat_value = [example[best_feat] for example in dataset];
+    feat_value_uniq = set(feat_value);
+    for value in feat_value_uniq:
+        sub_labels = label[:];
+        my_tree[best_feat_labal][value] = create_tree(
+            splitDataset(dataset, best_feat, value), sub_labels
+        );
+    return my_tree;
