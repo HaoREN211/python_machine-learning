@@ -230,3 +230,112 @@ def create_tree(dataset, label):
             splitDataset(dataset, best_feat, value), sub_labels
         );
     return my_tree;
+
+
+def get_num_leafs(my_tree):
+    """
+    取回树的叶节点数目
+    :param my_tree:
+    :return:
+    """
+    number_leaf = 0;
+    first_str = my_tree.keys()[0];
+    seconde_dict = my_tree[first_str];
+    for key in seconde_dict.keys():
+        """
+        type 函数用来判断类型
+        这里用递归判断叶节点数目
+        """
+        if type(seconde_dict[key]).__name__=='dict':
+            number_leaf += get_num_leafs(seconde_dict[key]);
+        else:
+            number_leaf +=1;
+    return number_leaf;
+
+def get_depth_of_tree(my_tree):
+    """
+    计算树的层数
+    :param my_tree:
+    :return:
+    """
+    max_depth = 0;
+    root_node = my_tree.keys()[0];
+    seconde_tree = my_tree[root_node];
+    for cle in seconde_tree.keys():
+        if type(seconde_tree[cle]).__name__ == 'dict':
+            this_depth = 1 + get_depth_of_tree(seconde_tree[cle]);
+        else:
+            this_depth = 1;
+        if this_depth > max_depth:
+            max_depth = this_depth;
+    return max_depth;
+
+def classyfy(input_tree,
+             feat_label,
+             test_vect):
+    """
+    通过决策树分类
+    :param input_tree:
+    :param feat_label:
+    :param test_vect:
+    :return:
+    """
+    root_node = input_tree.keys()[0];
+    index_vec = feat_label.index(root_node);
+    sub_tree = input_tree[root_node];
+    for cle in sub_tree.keys():
+        if test_vect[index_vec] == cle:
+            if type(sub_tree[cle]).__name__ == 'dict':
+                class_label = classyfy(sub_tree[cle], feat_label, test_vect);
+            else:
+                class_label = sub_tree[cle];
+    return class_label;
+
+
+
+def retrieve_tree(i):
+    """
+    返回上节得到的树和一颗新的树
+    :param i:
+    :return:
+    """
+    list_of_tree = [
+        {'no surfacing': {
+            0: 'no',
+            1: {
+                'flippers': {
+                    0: 'no',
+                    1: 'yes'}}}},
+        {'no surfacing': {
+            0: 'no',
+            1: {
+                'flippers': {
+                    0: {
+                      'head':{
+                          0:'no',
+                          1:'yes'
+                      }
+                    },
+                    1: 'yes'}}}}
+    ]
+    return list_of_tree[i];
+
+
+
+def store_tree(my_tree , file_name):
+    """
+    store the tree in the pc
+    :param my_tree:
+    :param file_name:
+    :return:
+    """
+    import pickle;
+    fw = open(file_name, "w");
+    pickle.dump(my_tree, fw);
+    fw.close();
+
+
+def grab_tree(file_name):
+    import pickle;
+    fr = open(file_name);
+    return pickle.load(fr);
