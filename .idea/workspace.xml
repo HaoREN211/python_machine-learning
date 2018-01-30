@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd525e0a-c725-4378-a832-afef35b31995" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/050_pikcle_tree.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/051_test_lenses_datas.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="cd525e0a-c725-4378-a832-afef35b31995" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,28 +12,27 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/python_machine_learning$044_test_tree_plot.coverage" NAME="044_test_tree_plot Coverage Results" MODIFIED="1517083636835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_machine_learning$042_test_decision_tree.coverage" NAME="042_test_decision_tree Coverage Results" MODIFIED="1517078089256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_machine_learning$018_cqll_knn.coverage" NAME="018_cqll_knn Coverage Results" MODIFIED="1517293797773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_machine_learning$049_test_tree_classify.coverage" NAME="049_test_tree_classify Coverage Results" MODIFIED="1517090238306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_machine_learning$051_test_lenses_datas.coverage" NAME="051_test_lenses_datas Coverage Results" MODIFIED="1517266900164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_machine_learning$051_test_lenses_datas.coverage" NAME="051_test_lenses_datas Coverage Results" MODIFIED="1517293957081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_machine_learning$039_attribut_choisi_test.coverage" NAME="039_attribut_choisi_test Coverage Results" MODIFIED="1516917823213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_machine_learning$o_tree_plotter.coverage" NAME="o_tree_plotter Coverage Results" MODIFIED="1517069427469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/outils" />
     <SUITE FILE_PATH="coverage/python_machine_learning$027_dating_data_test_KNN.coverage" NAME="027_dating_data_test_KNN Coverage Results" MODIFIED="1516995600764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_machine_learning$045_test_tree_detail.coverage" NAME="045_test_tree_detail Coverage Results" MODIFIED="1517079749828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_machine_learning$038_diff_append_extend.coverage" NAME="038_diff_append_extend Coverage Results" MODIFIED="1517266835778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_machine_learning$023_show_matplotlib.coverage" NAME="023_show_matplotlib Coverage Results" MODIFIED="1517072167195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_machine_learning$023_show_matplotlib.coverage" NAME="023_show_matplotlib Coverage Results" MODIFIED="1517293806452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_machine_learning$028_test_dating_person.coverage" NAME="028_test_dating_person Coverage Results" MODIFIED="1516995609828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_machine_learning$pickler.coverage" NAME="pickler Coverage Results" MODIFIED="1517091559016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/demo" />
-    <SUITE FILE_PATH="coverage/python_machine_learning$048_test_tree_plot.coverage" NAME="048_test_tree_plot Coverage Results" MODIFIED="1517088050254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_machine_learning$048_test_tree_plot.coverage" NAME="048_test_tree_plot Coverage Results" MODIFIED="1517293870253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="051_test_lenses_datas.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/051_test_lenses_datas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#43#82#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="304">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,10 +47,30 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="018_cqll_knn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/018_cqll_knn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="023_show_matplotlib.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/023_show_matplotlib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="o_trees.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/outils/o_trees.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
+            <state relative-caret-position="361">
               <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="22" />
               <folding />
             </state>
@@ -130,6 +145,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,6 +171,11 @@
             <path>
               <item name="python_machine-learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_machine-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="plot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_machine-learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_machine-learning" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -162,12 +183,11 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/HaoDownload" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/plot" />
     <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -183,6 +203,44 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.051_test_lenses_datas">
+    <configuration name="018_cqll_knn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python_machine-learning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/018_cqll_knn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="023_show_matplotlib" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python_machine-learning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/023_show_matplotlib.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="038_diff_append_extend" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -221,25 +279,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="049_test_tree_classify" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python_machine-learning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/049_test_tree_classify.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="051_test_lenses_datas" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -259,39 +298,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pickler" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/demo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python_machine-learning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo/pickler.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.048_test_tree_plot" />
-      <item index="1" class="java.lang.String" itemvalue="Python.049_test_tree_classify" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pickler" />
-      <item index="3" class="java.lang.String" itemvalue="Python.051_test_lenses_datas" />
-      <item index="4" class="java.lang.String" itemvalue="Python.038_diff_append_extend" />
+      <item index="0" class="java.lang.String" itemvalue="Python.051_test_lenses_datas" />
+      <item index="1" class="java.lang.String" itemvalue="Python.038_diff_append_extend" />
+      <item index="2" class="java.lang.String" itemvalue="Python.018_cqll_knn" />
+      <item index="3" class="java.lang.String" itemvalue="Python.023_show_matplotlib" />
+      <item index="4" class="java.lang.String" itemvalue="Python.048_test_tree_plot" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.051_test_lenses_datas" />
-        <item index="1" class="java.lang.String" itemvalue="Python.038_diff_append_extend" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pickler" />
-        <item index="3" class="java.lang.String" itemvalue="Python.049_test_tree_classify" />
-        <item index="4" class="java.lang.String" itemvalue="Python.048_test_tree_plot" />
+        <item index="1" class="java.lang.String" itemvalue="Python.048_test_tree_plot" />
+        <item index="2" class="java.lang.String" itemvalue="Python.023_show_matplotlib" />
+        <item index="3" class="java.lang.String" itemvalue="Python.018_cqll_knn" />
+        <item index="4" class="java.lang.String" itemvalue="Python.038_diff_append_extend" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +336,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.50902253" order="7" side_tool="true" content_ui="tabs" />
@@ -324,7 +343,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16336633" sideWeight="0.49097744" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15739386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15739386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -356,11 +375,33 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/051_test_lenses_datas.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/048_test_tree_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outils/o_trees.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/051_test_lenses_datas.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <element signature="e#43#82#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -376,7 +417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -480,13 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/023_show_matplotlib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -608,14 +641,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/outils/o_trees.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
+        <state relative-caret-position="361">
           <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/012_import_numpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/018_cqll_knn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/023_show_matplotlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -630,11 +686,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/051_test_lenses_datas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#43#82#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="304">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
