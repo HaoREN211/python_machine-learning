@@ -2,7 +2,7 @@
 #!/usr/bin/python
 
 # from numpy import zeros
-from numpy import ones, log
+from numpy import ones, log, array
 
 def load_data_set():
     """
@@ -49,7 +49,8 @@ def create_vocab_list(data_set):
 
 def set_of_words_2_vec(vocab_list, input_set):
     """
-    统计vocab_list里的单词在input_set里出现的次数
+    统计vocab_list里的单词在input_set里是否出现
+    词集模式
     :param vocab_list:
     :param input_set:
     :return:
@@ -58,6 +59,24 @@ def set_of_words_2_vec(vocab_list, input_set):
     for word in input_set:
         if (word in vocab_list):
             return_vec[vocab_list.index(word)] =1
+        else:
+            print "the word : %s is not in my vocabulary!" % word
+    return return_vec
+
+
+
+def bag_of_words_2_vec(vocab_list, input_set):
+    """
+    统计vocab_list里的单词在input_set里出现的次数
+    词袋模式
+    :param vocab_list:
+    :param input_set:
+    :return:
+    """
+    return_vec = [0] * len(vocab_list)
+    for word in input_set:
+        if (word in vocab_list):
+            return_vec[vocab_list.index(word)] += 1
         else:
             print "the word : %s is not in my vocabulary!" % word
     return return_vec
@@ -101,3 +120,60 @@ def train_nb_0(train_matrix, train_category):
     p1_vect = log(p1_num/p1_denom)
     p0_vect = log(p0_num/p0_denom)
     return p0_vect, p1_vect, p_abusive;
+
+
+
+def classify_nb(vect_to_classify, p0_vect, p1_vect, p_class_1):
+    """
+    分类器
+    :param vect_to_classify:
+    :param p0_vect:    P(w | c2)
+    :param p1_vect:    P(w | c1)
+    :param p_class_1:  P(c1)
+    :return:
+    """
+
+    # log 让相乘变为相加，sum和后面的加是一个原理
+    p1 = sum(vect_to_classify*p1_vect) + log(p_class_1)
+    p0 = sum(vect_to_classify * p0_vect) + log(1 - p_class_1)
+    if(p1 > p0):
+        return 1
+    else:
+        return 0
+
+
+def test_nb():
+    """
+    测试分类器
+    :return:
+    """
+
+    list_of_post, list_of_category = load_data_set()
+    my_vocabulary = create_vocab_list(list_of_post)
+    train_mat = []
+    for post in list_of_post:
+        train_mat.append(set_of_words_2_vec(my_vocabulary, post))
+    p0_v, p1_v, p_ab = train_nb_0(train_mat, list_of_category)
+
+    test_entry = ['love', 'my', 'dalmation']
+    this_doc = array(set_of_words_2_vec(my_vocabulary, test_entry))
+    resultat1 = classify_nb(this_doc, p0_v, p1_v, p_ab)
+    print "result is %s " % resultat1
+
+    test_entry = ['stupid', 'garbage']
+    this_doc = array(set_of_words_2_vec(my_vocabulary, test_entry))
+    resultat = classify_nb(this_doc, p0_v, p1_v, p_ab)
+    print "result is %s " % resultat
+    return resultat1, resultat
+
+
+
+def text_parse(big_string):
+    """
+    将字符串转换为单词列表
+    :param big_string:
+    :return:
+    """
+    import re
+    list_of_token = re.split('\\W*', big_string)
+    return [token.lower() for token in list_of_token if len(token)>0]
