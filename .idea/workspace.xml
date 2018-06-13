@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd525e0a-c725-4378-a832-afef35b31995" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/outils/o_pca.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outils/o_svd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,13 +43,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="o_pca.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/outils/o_pca.py">
+      <file leaf-file-name="o_svd.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/outils/o_svd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+            <state relative-caret-position="441">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding>
-                <element signature="e#55#101#0" expanded="true" />
+                <element signature="e#274#300#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,6 +118,7 @@
         <option value="$PROJECT_DIR$/outils/e_xgboost.py" />
         <option value="$PROJECT_DIR$/outils/e_long_short_term_memory.py" />
         <option value="$PROJECT_DIR$/outils/o_pca.py" />
+        <option value="$PROJECT_DIR$/outils/o_svd.py" />
       </list>
     </option>
   </component>
@@ -371,13 +372,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/051_test_lenses_datas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/outils/o_scrapy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -711,10 +705,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/outils/o_pca.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
+        <state relative-caret-position="1440">
           <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
           <folding>
             <element signature="e#55#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outils/o_svd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#274#300#0" expanded="true" />
           </folding>
         </state>
       </provider>
