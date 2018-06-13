@@ -60,7 +60,7 @@ def set_of_words_2_vec(vocab_list, input_set):
         if (word in vocab_list):
             return_vec[vocab_list.index(word)] =1
         else:
-            print "the word : %s is not in my vocabulary!" % word
+            print ("the word : %s is not in my vocabulary!" % word)
     return return_vec
 
 
@@ -78,7 +78,7 @@ def bag_of_words_2_vec(vocab_list, input_set):
         if (word in vocab_list):
             return_vec[vocab_list.index(word)] += 1
         else:
-            print "the word : %s is not in my vocabulary!" % word
+            print ("the word : %s is not in my vocabulary!" % word)
     return return_vec
 
 
@@ -158,12 +158,12 @@ def test_nb():
     test_entry = ['love', 'my', 'dalmation']
     this_doc = array(set_of_words_2_vec(my_vocabulary, test_entry))
     resultat1 = classify_nb(this_doc, p0_v, p1_v, p_ab)
-    print "result is %s " % resultat1
+    print ("result is %s " % resultat1)
 
     test_entry = ['stupid', 'garbage']
     this_doc = array(set_of_words_2_vec(my_vocabulary, test_entry))
     resultat = classify_nb(this_doc, p0_v, p1_v, p_ab)
-    print "result is %s " % resultat
+    print ("result is %s " % resultat)
     return resultat1, resultat
 
 
